@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>넴트로놈</title>
+  <!-- 구글 폰트 Noto Sans KR 불러오기 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>넴트로놈</h1>
+  <video id="video" src="Video.mp4" muted></video>
+
+  <!-- 사운드 파일 -->
+  <audio id="soundNormal" src="sound.mp3" preload="auto"></audio>
+  <audio id="soundDownbeat" src="sound2.mp3" preload="auto"></audio>
+
+  <div class="controls">
+    <label for="bpmSlider">BPM:</label>
+    <input type="range" id="bpmSlider" min="30" max="300" value="100">
+    <span id="bpmValue">100</span>
+  </div>
+
+  <div class="buttons">
+    <button id="playBtn">Play</button>
+    <button id="stopBtn">Stop</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <div class="beat-lights" id="beatLights"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
